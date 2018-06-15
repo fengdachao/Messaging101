@@ -1,0 +1,8 @@
+# -*- coding: cp936 -*-
+from messageSender import MessageSender
+
+if __name__ == "__main__":
+    print "---------²âÊÔ·¢ËÍ-------"
+    sender = MessageSender()
+    sender.send("²âÊÔ¶ÌĞÅ")
+

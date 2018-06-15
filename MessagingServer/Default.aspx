@@ -9,7 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <h1>设备连接测试</h1>
+        <asp:Label runat="server" ID="lbl"></asp:Label>
     </div>
     </form>
 </body>
