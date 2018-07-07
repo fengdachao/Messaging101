@@ -8,8 +8,8 @@ class MessageSender:
         self.headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
     def send(self, text):
-        params = urllib.urlencode({'text': text})
-        self.conn.request('POST', '/ajax/message', params, self.headers)
+        params = urllib.urlencode({'text': text.encode('utf-8')})
+        self.conn.request('POST', '/ajax/message.aspx', params, self.headers)
         #response = conn.getresponse()
         print '发送短信请求完毕'
 
